@@ -1,0 +1,337 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Gabarito", cursive;
+}
+
+.linebreak {
+  height: 2px;
+  flex-basis: 100%;
+}
+
+.linebreakTwo {
+  height: 2px;
+  flex-basis: 100%;
+  background-color: white;
+}
+
+#introduction {
+  color: white;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 70px;
+  width: 400px;
+}
+
+#afterHomePage {
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+}
+
+#navBarAndAboutMe {
+  height: 100vh;
+  margin-top: -70px;
+}
+
+#navBar {
+  position: absolute;
+  color: white;
+  border-bottom: 2px solid white;
+  align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+}
+#navBar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+#navBar h1 {
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px;
+}
+#navBar li {
+  margin: 30px;
+  font-size: 20px;
+}
+
+#aboutMe {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-top: 70px;
+  text-align: center;
+}
+#aboutMe #aboutMeDescriptionAndButtons {
+  margin: 10px;
+  width: 200px;
+  background-color: red;
+}
+#aboutMe #aboutMeDescriptionAndButtons p {
+  color: white;
+  background-color: purple;
+}
+#aboutMe #aboutMeDescriptionAndButtons #aboutMeButtons {
+  background-color: green;
+}
+#aboutMe #aboutMeDescriptionAndButtons #aboutMeButtons #linkedInButton {
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+}
+#aboutMe #aboutMeDescriptionAndButtons #aboutMeButtons #resumeButton {
+  width: 70px;
+  height: 30px;
+  margin: 5px;
+}
+#aboutMe img {
+  height: 350px;
+  width: 210px;
+  border: 5px solid grey;
+}
+
+.pageHeader {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#workSectionOne, #workSectionThree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+#workSectionTwo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.projectContainer {
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+
+#borderEffectOne {
+  transform: translateX(-300px);
+  transition: 3s ease-in-out;
+  opacity: 0;
+}
+
+#borderEffectOne.show {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 3s ease-in-out;
+}
+
+#projectDescriptionOne {
+  transform: translateX(300px);
+  transition: 3s ease-in-out;
+  opacity: 0;
+}
+
+#projectDescriptionOne.show {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: 3s ease-in-out;
+}
+
+#borderEffectOne {
+  margin-left: 30px;
+  width: 890px;
+  height: 500px;
+  background-color: #1CAC78;
+  z-index: 0;
+  transition: transform 0.2s ease-in-out;
+}
+#borderEffectOne #projectImageOne {
+  width: 787px;
+  height: 430px;
+  z-index: 1;
+  margin-top: 65px;
+  margin-left: 80px;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.12);
+}
+
+#borderEffectTwo {
+  margin-right: 30px;
+  width: 890px;
+  height: 500px;
+  background-color: #1CAC78;
+  z-index: 0;
+  transition: transform 0.2s ease-in-out;
+}
+#borderEffectTwo #projectImageTwo {
+  width: 787px;
+  height: 430px;
+  z-index: 1;
+  margin-top: 65px;
+  margin-right: 80px;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.12);
+}
+
+.projectDescription {
+  z-index: 3;
+  flex-grow: 1;
+  margin-left: -30px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+.projectDescription #titleOne {
+  font-size: 69px;
+  margin: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #FFAC1C, #1CAC78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projectDescription #titleTwo {
+  text-align: right;
+  font-size: 69px;
+  margin: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #FFAC1C, #1CAC78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projectDescription #descriptionOne {
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  margin-left: 60px;
+  font-size: 20px;
+}
+.projectDescription #descriptionTwo {
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  margin-right: 60px;
+  font-size: 20px;
+  text-align: right;
+}
+.projectDescription #paragraphOne {
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  margin-left: 60px;
+  font-size: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.projectDescription #paragraphTwo {
+  text-align: right;
+  font-weight: bold;
+  margin: 20px;
+  color: white;
+  margin-right: 60px;
+  font-size: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.projectDescription #buttonsOne {
+  margin-left: 45px;
+}
+.projectDescription #buttonsOne button {
+  background-color: transparent;
+  color: white;
+  width: 90px;
+  height: 40px;
+  margin: 10px;
+}
+.projectDescription #buttonsTwo {
+  margin-right: 45px;
+}
+.projectDescription #buttonsTwo button {
+  background-color: transparent;
+  color: white;
+  width: 90px;
+  height: 40px;
+  margin: 10px;
+}
+
+#projectOneDescription {
+  justify-content: flex-start;
+}
+
+#projectTwoDescription {
+  justify-content: flex-end;
+}
+
+.moduleChallengeGroupings {
+  background-color: #343434;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px;
+  align-items: center;
+}
+.moduleChallengeGroupings #challengeDescription {
+  color: white;
+  margin-right: 100px;
+  padding-left: 100px;
+  vertical-align: center;
+  font-size: 50px;
+}
+
+#groupingsOne {
+  position: relative;
+  bottom: 40px;
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+#groupingsTwo {
+  position: relative;
+  bottom: 40px;
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+.moduleChallengeVideo {
+  width: 140px;
+  padding: 5px;
+  background-color: grey;
+  margin: 5px;
+}
+
+#workSectionThree {
+  background-color: slateblue;
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mySkillsPage {
+  height: 100vh;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
