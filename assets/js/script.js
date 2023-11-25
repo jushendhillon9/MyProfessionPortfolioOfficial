@@ -171,3 +171,18 @@ $(window).on("resize", contactMeReformat)
 $(window).on("load", contactMeReformat)
 
 
+const videos = document.querySelectorAll('.moduleChallengeVideo');
+
+    // Add a click event listener to each video
+    videos.forEach(video => {
+        video.addEventListener('click', () => toggleControls(video));
+    });
+
+    // Function to toggle the controls attribute
+    function toggleControls(video) {
+        if (video.hasAttribute('controls')) {
+            video.removeAttribute('controls');
+        } else {
+            video.setAttribute('controls', 'true');
+        }
+    }
