@@ -18,16 +18,16 @@
             <nav>
                 <ul>
                     <li>
-                        About Me
+                        <a href = "#aboutMeHeader">About Me</a>
                     </li>
                     <li>
-                        Projects
+                        <a href = "#projectsHeader">Projects</a>
                     </li>
                     <li>
-                        Skills
+                        <a href = "#skillsHeader">Skills</a>
                     </li>
                     <li>
-                        Blog/Contact Me
+                        <a href = "#blogContactHeader">Blog/Contact Me</a>
                     </li>
                 </ul>
             </nav>
@@ -86,16 +86,22 @@
             <div class="star"></div>
         </div>
         <section id = "navBarAndAboutMe" class = "pageOne">
+            <h2 id = "aboutMeHeader" class = "pageHeader">About Me</h2>
             <div id = "aboutMe">
                 <div id = "aboutMeDescriptionAndButtons">
                     <p>
                         Hey there, I'm Jushen Dhillon, an aspiring software engineer on the hunt for an internship. My coding journey kicked off during the pandemic with Python lessons from my cousin Devin over Zoom. The spark turned into a passion, leading me to enroll in the UCI full-stack coding bootcamp. One project that stands out is Bug-Crushers—it introduced me to the backend, expanding my coding horizon. Currently gearing up for a new project with a modern tech stack. In my downtime, I brainstorm potential projects, considering their audience and impact. Check out my portfolio, and thanks for stopping by!
                     </p>
                     <div class = "linebreak"></div>
-                    <div id = "aboutMeButtons">
-                        <button id = "linkedInButton">LinkedIn</button>
-                        <button id = "resumeButton">Resume</button>
+                    <div id="aboutMeButtons">
+                        <a href="https://www.linkedin.com/in/jushendhillon/" target = "_blank">
+                            <button id="linkedInButton">LinkedIn</button>
+                        </a>
+                        <a href="path/to/your/file.pdf" download="your_file_name.pdf">
+                            <button id="resumeButton">Resume</button>
+                        </a>
                     </div>
+                    
                 </div>
                 <img src = "./assets/images/ProfessionalPhoto.jpg">
             </div>
@@ -103,7 +109,7 @@
     </div>
     <section id = "afterHomePage">
         <section id = "workPage" class = "pageTwo">
-            <h2 class = "pageHeader">Projects & Challenges</h2>
+            <h2 id = "projectsHeader" class = "pageHeader">Projects & Challenges</h2>
             <div id = "myWorkSection">
                 <div id = "workSectionOne">
                     <div id = "projectOne" class = "projectContainer"> 
@@ -256,7 +262,7 @@
             </div>
         </section>
         <section id = "mySkillsPage" class = "pageThree">
-            <h2 class = "pageHeader" >My Skills</h2>
+            <h2 id = "skillsHeader" class = "pageHeader" >My Skills</h2>
             <div id = "skillsDivision">
                 <div id = "skillsSectionOne">
                     <div class = "skillsSectionHeader">Front-End</div>
@@ -487,7 +493,7 @@
             </div>
     </section>
     <section id = "contactAndBlog">
-        <h2 class = "pageHeader">Contact & Blog</h2>
+        <h2 id = "blogContactHeader" class = "pageHeader">Contact & Blog</h2>
         <div id = "contactAndBlogContainer">
             <div id="devToLogo">
                 <a href="https://dev.to/jushendhillon9" target="blank">
