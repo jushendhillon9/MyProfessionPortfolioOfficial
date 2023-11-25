@@ -425,6 +425,11 @@
   width: 80%;
   height: 230px;
 }
+
+.videosAnchorTag {
+  z-index: 6;
+}
+
 .moduleChallengeGroupings .challengeDescription {
   color: white;
   margin-right: 100px;
@@ -983,10 +988,6 @@
     margin-left: 80px;
     transition: transform 0.2s ease-in-out;
     transform: scale(1.12);
-  }
-  #projectDescriptionOne {
-    position: relative;
-    top: -70px;
   }
   #projectDescriptionTwo {
     position: relative;
