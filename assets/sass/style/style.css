@@ -38,7 +38,7 @@
   width: 100vw;
 
   background-image: url("../../images/hills-v2.png");
-  
+
   background-position: center 20%;
   margin-bottom: 100vh;
   padding-right: 60vw;
@@ -438,6 +438,7 @@
 #groupingsOne {
   position: relative;
   bottom: 140px;
+  z-index: 4;
 }
 
 #groupingsTwo {
@@ -447,6 +448,11 @@
   flex-wrap: wrap-reverse;
   margin-right: 20px;
   padding-right: 10px;
+  z-index: 4;
+}
+
+#groupingsThree {
+  z-index: 4;
 }
 
 .moduleChallengeVideo {
