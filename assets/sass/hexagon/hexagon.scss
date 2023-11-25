@@ -1,3 +1,1085 @@
-header {
-    background-color: red;
+.hexagon {
+    width: 100px;
+    height: 110px;
+    margin: 2px;
+    background-color: #000;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+    0% 75%, 0% 25%);
+    animation: animation 4s linear infinite;
+    transition: 1s;
+}
+
+#htmlIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 135px;
+    bottom: 25px;
+    text-align: center;
+}
+
+#cssIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 238.5px;
+    bottom: 25px;
+    text-align: center;
+}
+
+#sassIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 240px;
+    bottom: 25px;
+    text-align: center;
+}
+
+#jsIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 120px;
+    bottom: 27px;
+    text-align: center;
+}
+
+#reactIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 344px;
+    bottom: 25px;
+    text-align: center;
+}
+
+#jqueryIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 236px;
+    bottom: 27px;
+    text-align: center;
+}
+
+#chartjsIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 129px;
+    bottom: 27px;
+    text-align: center;
+}
+
+#handlebarsIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 219px;
+    bottom: 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#bootstrapIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 335px;
+    bottom: 32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#nodejsIcon {
+    position: absolute;
+    img {
+        height: 45px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 340px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#expressIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 125px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#mysqlIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 135px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#sequelizeIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 230px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#mongoIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 230px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#mongooseIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 75px;
+    }
+    z-index: 1;
+    left: 120px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#restfulAPIicon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 60px;
+    }
+    z-index: 1;
+    left: 330px;
+    bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#mvcIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 343px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#gitIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 240px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#githubIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 240px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#herokuIcon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 342px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#webpackicon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 130px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#jesticon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 240px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#vscodeicon {
+    position: absolute;
+    img {
+        height: 40px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 235px;
+    bottom: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.clearHexagon {
+    width: 100px;
+    height: 110px;
+    margin: 2px;
+    background-color: transparent;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+    0% 75%, 0% 25%);
+}
+
+
+.hexagon:hover {
+    background-color: green;
+    cursor: pointer;
+    transition: 0s;
+}
+
+@keyframes animation {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{filter: hue-rotate(360deg);}
+}
+
+.hexagon:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background-color: #000;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+    0% 75%, 0% 25%);
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.03);
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 1100px){
+    .hexagon {
+      width: 70px;
+      height: 70px;
+      margin: -35px;
+      margin-right: 37px;
+      margin-top: 3px;
+      background-color: #000;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+      0% 75%, 0% 25%);
+      animation: animation 4s linear infinite;
+      transition: 1s;
+    }
+    .clearHexagon {
+      width: 70px;
+      height: 70px;
+      margin: -35px;
+      margin-right: 37px;
+      margin-top: 3px;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+      0% 75%, 0% 25%);
+  }
+  
+  .row:nth-child(even) {
+    margin-left: -15px;
+  
+    margin-top: -22px;
+  }
+
+  .row:nth-child(odd) {
+    margin-top: -22px;
+  }
+
+  #htmlIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 60px;
+    top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#cssIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 132px;
+    top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#sassIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 131px;
+    top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#jsIcon {
+    position: absolute;
+    img {
+        height: 30px;
+        width: 30px;
+    }
+    z-index: 1;
+    left: 50px;
+    top: 15px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#reactIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 204px;
+    top: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#jqueryIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 57px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#chartjsIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 127px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#handlebarsIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 115px;
+    top: 15px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#bootstrapIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 195px;
+    top: 15px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#nodejsIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 200px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#expressIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 51px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#mysqlIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 56px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#sequelizeIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 123px;
+    top: 18px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#mongoIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 122px;
+    top: 17px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#mongooseIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 45px;
+    }
+    z-index: 1;
+    left: 49px;
+    top: 17px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#restfulAPIicon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 40px;
+    }
+    z-index: 1;
+    left: 190px;
+    top: 17px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#mvcIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 200px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#gitIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 132px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#githubIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 128px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#herokuIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 201px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#webpackicon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 52px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#jesticon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 129px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#vscodeicon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+    }
+    z-index: 1;
+    left: 124px;
+    top: 19px;
+    text-align: center;
+    font-size: 10px;
+}
+#containerOne { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    left: 45px;
+  }
+  
+  #containerTwo { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    left: 60px;
+  }
+  
+  #containerThree { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    right: -25px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+      .hexagon {
+        width: 50px;
+        height: 55px;
+        margin: -35px;
+        margin-right: 37px;
+        margin-top: 3px;
+        background-color: #000;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+        0% 75%, 0% 25%);
+        animation: animation 4s linear infinite;
+        transition: 1s;
+      }
+      .clearHexagon {
+        width: 50px;
+        height: 55px;
+        margin: -35px;
+        margin-right: 37px;
+        margin-top: 3px;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%,
+        0% 75%, 0% 25%);
+    }
+    
+    .row:nth-child(even) {
+      margin-left: -24px;
+    
+      margin-top: -19px;
+    }
+  
+    .row:nth-child(odd) {
+      margin-top: -19px;
+    }
+
+  #htmlIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 32px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#cssIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 84px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#sassIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 84px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#jsIcon {
+    position: absolute;
+    img {
+        height: 25px;
+        width: 25px;
+        margin-bottom: -3px;
+    }
+    z-index: 1;
+    left: 24px;
+    top: 12px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#reactIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 23px;
+    }
+    z-index: 1;
+    left: 135px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#jqueryIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 30px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#chartjsIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 80px;
+    top: 15px;
+    text-align: center;
+    font-size: 8px;
+}
+
+#handlebarsIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+        margin-bottom: -1px;
+    }
+    z-index: 1;
+    left: 73.5px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#bootstrapIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 131px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#nodejsIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 135px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#expressIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 27px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#mysqlIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 32px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#sequelizeIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 79px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#mongoIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 79px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#mongooseIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 35px;
+        margin-bottom: -3px;
+    }
+    z-index: 1;
+    left: 25px;
+    top: 18px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#restfulAPIicon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 35px;
+    }
+    z-index: 1;
+    left: 128px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#mvcIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 135px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#gitIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 84px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#githubIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 83px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#herokuIcon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 135px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#webpackicon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 28px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#jesticon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 83px;
+    top: 17px;
+    text-align: center;
+    font-size: 7px;
+}
+
+#vscodeicon {
+    position: absolute;
+    img {
+        height: 20px;
+        width: 20px;
+    }
+    z-index: 1;
+    left: 80px;
+    top: 15px;
+    text-align: center;
+    font-size: 7px;
+}
+#containerOne { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    left: 55px;
+  }
+  
+  #containerTwo { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    left: 60px;
+  }
+  
+  #containerThree { //equivalent to container class 
+    position: relative;
+    top: 200px;
+    right: -35px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    #mySkillsPage {
+        height: 200%;
+        width: 100%;
+    }
+    #skillsDivision {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      #skillsSectionOne {
+        margin-top: 250px;
+      }
+      #skillsSectionOne, #skillsSectionTwo, #skillsSectionThree {
+        width: 100%;
+        height: 250px;
+      }
+      .skillsSectionHeader {
+        font-size: 25px;
+      }
+      #hexagonsOne {
+        position: absolute;
+        bottom: 350px;
+      }
+      #hexagonsTwo {
+        position: absolute;
+        bottom: 370px;
+      }
+      #hexagonsThree {
+        position: absolute;
+        bottom: 350px;
+      }
 }

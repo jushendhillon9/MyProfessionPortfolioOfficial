@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./assets/sass/style/style.css">
     <link rel = "stylesheet" href = "./assets/sass/homepage/homepage.css">
-    <link rel = "stylesheet" href = "./assets/sass/hexagon/hexagon.scss">
+    <link rel = "stylesheet" href = "./assets/sass/hexagon/hexagon.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Martian+Mono:wght@400;700&family=MuseoModerno:wght@400;500&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
@@ -27,10 +27,7 @@
                         Skills
                     </li>
                     <li>
-                        Blog
-                    </li>
-                    <li>
-                        Contact Me
+                        Blog/Contact Me
                     </li>
                 </ul>
             </nav>
@@ -88,12 +85,13 @@
             <div class="star"></div>
             <div class="star"></div>
         </div>
-    </div>
-    <section id = "afterHomePage">
         <section id = "navBarAndAboutMe" class = "pageOne">
             <div id = "aboutMe">
                 <div id = "aboutMeDescriptionAndButtons">
-                    <p>ABOUT ME DESCRIPTION. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae atque minus voluptatem, quos praesentium alias porro mollitia tenetur esse excepturi illo voluptate, impedit fuga ex velit architecto veniam omnis. Molestiae?</p>
+                    <p>
+                        Hey there, I'm Jushen Dhillon, an aspiring software engineer on the hunt for an internship. My coding journey kicked off during the pandemic with Python lessons from my cousin Devin over Zoom. The spark turned into a passion, leading me to enroll in the UCI full-stack coding bootcamp. One project that stands out is Bug-Crushers—it introduced me to the backend, expanding my coding horizon. Currently gearing up for a new project with a modern tech stack. In my downtime, I brainstorm potential projects, considering their audience and impact. Check out my portfolio, and thanks for stopping by!
+                    </p>
+                    <div class = "linebreak"></div>
                     <div id = "aboutMeButtons">
                         <button id = "linkedInButton">LinkedIn</button>
                         <button id = "resumeButton">Resume</button>
@@ -102,27 +100,38 @@
                 <img src = "./assets/images/ProfessionalPhoto.jpg">
             </div>
         </section>
+    </div>
+    <section id = "afterHomePage">
         <section id = "workPage" class = "pageTwo">
             <h2 class = "pageHeader">Projects & Challenges</h2>
             <div id = "myWorkSection">
                 <div id = "workSectionOne">
-                    <a id = "projectOne" class = "projectContainer"> 
-                        <div id = "borderEffectOne" class = "borderEffectOne">
-                            <img id = "projectImageOne" src = "./assets/images/Crypt0-Z0ne.png">
+                    <div id = "projectOne" class = "projectContainer"> 
+                        <div id = "borderEffectOne" class = "borderEffectOne show">
+                            <img id = "projectImageOne" src = "./assets/images/Crypto-Zone.png">
                         </div>
-                        <div id = "projectDescriptionOne" class = "projectDescription">
-                            <p id = "titleOne">The Crypto-Z0ne</p>
+                        <div id = "projectDescriptionOne" class = "projectDescription show">
+                            <p id = "titleOne">The Crypto-Zone</p>
+                            <div class = "linebreak"></div>
                             <p id = "descriptionOne">A front-end application to keep tabs on your favorite, promising cryptos by offering real-time crypto tracking, advanced statistics, and insightful news.</p>
-                            <p id = "paragraphOne">Built using HTML, CSS featuring frameworks, JavaScript with JQuery, Chart.js, and several APIs</p>
+                            <div class = "linebreak"></div>
+                            <p id = "note">Note: We have limited CoinGecko API queries per minute; if the app loses crypto data during its use, please wait 5 minutes and then reload the application before continuing. </p>
+                            <div class = "linebreak"></div>
+                            <p id = "paragraphOne">Built using HTML, CSS featuring frameworks, JavaScript with JQuery, Chart.js, and several third-party APIs</p>
+                            <div class = "linebreak"></div>
                             <div id = "buttonsOne">
-                                <button>Live App</button>
-                                <button>Github</button>
+                                <a target = "blank" href = "https://jushendhillon9.github.io/Crypto-Zone/">
+                                    <button class = "linkButton">Live App</button>
+                                </a>
+                                <a target = "blank" href = "https://github.com/jushendhillon9/Crypto-Zone">
+                                    <button class = "linkButton">Github</button>
+                                </a>
                             </div>
                         </div>
-                    </a>
-                    <div class = "moduleChallengeGroupings" id = "groupingsOne">
-                        <div id = "challengeDescription">Challenges leading <br> up to Crypto-Z0ne</div>
-                        <a>
+                    </div>
+                    <div id = "groupingsOne" class = "moduleChallengeGroupings">
+                        <div class = "challengeDescription">Challenges leading <br> up to Crypto-Zone</div>
+                        <a class = "videosAnchorTag">
                             <video class = "moduleChallengeVideo" autoplay muted controls>
                                 <source src = "./assets/images/Module Challenge 1.mp4" type = "video/mp4">
                             </video>
@@ -150,89 +159,373 @@
 
 
                 <div id = "workSectionTwo">
-                    <a id = "projectTwo" class = "projectContainer"> 
-                        <div class = "projectDescription" id = "projectTwoDescription">
-                            <p id = "titleTwo">The Crypto-Z0ne</p>
+                    <div id = "projectTwo" class = "projectContainer"> 
+                        <div id = "projectDescriptionTwo" class = "projectDescription show">
+                            <div id = "titleTwoContainer">
+                                <p id = "titleTwo">Bug Crushers</p>
+                            </div>
+                            <div class = "linebreak"></div>
                             <p id = "descriptionTwo">A front-end application for you to keep tabs on your favorite, promising cryptos by offering real-time crypto tracking, advanced statistics, and insightful news.</p>
+                            <div class = "linebreak"></div>
                             <p id = "paragraphTwo">Built using HTML, CSS featuring frameworks, JavaScript with JQuery, Chart.js, and several APIs</p>
+                            <div class = "linebreak"></div>
                             <div id = "buttonsTwo">
-                                <button>Live App</button>
-                                <button>Github</button>
+                                <a target = "blank" href = "https://bug-crushers-3204d0c3c501.herokuapp.com/">
+                                    <button class = "linkButton">Live App</button>
+                                </a>
+                                <a target = "blank" href = "https://github.com/jushendhillon9/Bug-Crushers">
+                                    <button class = "linkButton">Github</button>
+                                </a>
                             </div>
                         </div>
-                        <div id = "borderEffectTwo">
-                            <img id = "projectImageTwo" src = "./assets/images/Crypt0-Z0ne.png">
+                        <div id = "borderEffectTwo" class = "borderEffectOne show">
+                            <img id = "projectImageTwo" src = "./assets/images/Bug-Crushers.png">
                         </div>
-                    </a>
-                    <div class = "moduleChallengeGroupings" id = "groupingsTwo">
-                        <a>
+                    </div>
+                    <div id = "groupingsTwo" class = "moduleChallengeGroupings">
+                        <a class = "videosAnchorTag">
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 1.mp4" type = "video/mp4">
+                                <source src = "./assets/images/Module 9 Challenge.mp4" type = "video/mp4">
                             </video>
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 2.mp4" type = "video/mp4">
+                                <source src = "./assets/images/Module 10 Challenge.mp4" type = "video/mp4">
                             </video>
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 3.mp4" type = "video/mp4">
+                                <source src = "./assets/images/Module Challenge 11.mp4" type = "video/mp4">
                             </video>
                             <div class = "linebreak"></div>
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 4.mp4" type = "video/mp4">
+                                <source src = "./assets/images/Module 12 Challenge.mp4" type = "video/mp4">
                             </video>
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 5.mp4" type = "video/mp4">
+                                <source src = "./assets//images/Module 13 Challenge.mp4" type = "video/mp4">
                             </video>
                             <video class = "moduleChallengeVideo" autoplay muted controls>
-                                <source src = "./assets/images/Module Challenge 6.mp4" type = "video/mp4">
+                                <source src = "./assets/images/Module Challenge 14.mp4" type = "video/mp4">
                             </video>
                         </a>
-                        <div id = "challengeDescription">Challenges leading <br> up to Crypto-Z0ne</div>
+                        <div class = "challengeDescription">Challenges leading <br> up to Bug Crushers</div>
                     </div>
                 </div>
-
-
-
                 <div id = "workSectionThree">
-                    <a class = "project" id = "projectThree">
-                        <img class = "projectImage">
-                        <p class = "projectDescription">Project Description goes here</p>
-                    </a>
-                    <a id = "moduleChallengeOne">
-                        <video>
-    
-                        </video>
-                    </a>
-                    <a id = "moduleChallengeTwo">
-                        <video>
-    
-                        </video>
-                    </a>
-                    <a id = "moduleChallengeThree">
-                        <video>
-    
-                        </video>
-                    </a>
-                    <a id = "moduleChallengeFour">
-                        <video>
-    
-                        </video>
-                    </a>
-                    <a id = "moduleChallengeFive">
-                        <video>
-    
-                        </video>
-                    </a>
-                    <a id = "moduleChallengeSix">
-                        <video>
-    
-                        </video>
-                    </a>
+                    <div id = "projectThree" class = "projectContainer"> 
+                        <div id = "borderEffectThree" class = "borderEffectThree show">
+                            <img id = "projectImageThree" src = "./assets/images/project_three_placeholder.webp">
+                        </div>
+                        <div id = "projectDescriptionThree" class = "projectDescription show">
+                            <p id = "titleThree"> Project Three</p>
+                            <div class = "linebreak"></div>
+                            <p id = "descriptionThree">Coming soon (December 14th)</p>
+                            <div class = "linebreak"></div>
+                            <p id = "paragraphThree">Built using MongoDB, Express.js, React, and Node.js</p>
+                            <div class = "linebreak"></div>
+                            <div id = "buttonsThree">
+                                <a target = "blank">
+                                    <button class = "linkButton">Live App</button>
+                                </a>
+                                <a target = "blank">
+                                    <button class = "linkButton">Github</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = "groupingsThree" class = "moduleChallengeGroupings">
+                        <div class = "challengeDescription">Challenges leading <br> up to Project 3</div>
+                        <a class = "videosAnchorTag">
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                            <div class = "linebreak"></div>
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                            <video class = "moduleChallengeVideo" autoplay muted controls>
+                                <source src = "" type = "video/mp4">
+                            </video>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <section id = "mySkillsPage" class = "pageThree">
             <h2 class = "pageHeader" >My Skills</h2>
-        </section>
+            <div id = "skillsDivision">
+                <div id = "skillsSectionOne">
+                    <div class = "skillsSectionHeader">Front-End</div>
+                    <div id = "containerOne">
+                        <div id = "hexagonsOne">
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div>
+                                    <div class = "hexagon"></div>
+                                    <div id = "htmlIcon">
+                                        <img src = "assets/images/HTML_Icon.png">
+                                        <div>HTML</div>
+                                    </div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "cssIcon">
+                                    <img src = "assets/images/CSS_icon.png">
+                                    <div>CSS</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "sassIcon">
+                                    <img src = "assets/images/SASS_icon.png">
+                                    <div>SASS</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "jsIcon">
+                                    <img src = "assets/images/JS_icon.webp">
+                                    <div>JavaScript</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "reactIcon">
+                                    <img src = "assets/images/React_icon.png">
+                                    <div>React</div>
+                                </div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "jqueryIcon">
+                                    <img src = "assets/images/jquery_icon.svg">
+                                    <div>jQuery</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "chartjsIcon">
+                                    <img src = "assets/images/chartjs_icon.png">
+                                    <div>Chart.js</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "handlebarsIcon">
+                                    <img src = "assets/images/handlebars_icon.png">
+                                    <div>Handlebars.js</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "bootstrapIcon">
+                                    <img src = "assets/images/bootstrap_icon.png">
+                                    <div>Bootstrap</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "skillsSectionTwo">
+                    <div id = "skillsSectionHeaderTwo" class = "skillsSectionHeader">Back-End</div>
+                    <div id = "containerTwo">
+                        <div id = "hexagonsTwo">
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "nodejsIcon">
+                                    <img src = "assets/images/nodejs_icon.png">
+                                    <div>Node.js</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "expressIcon">
+                                    <img src = "assets/images/express_icon.png">
+                                    <div>Express.js</div>
+                                </div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "mysqlIcon">
+                                    <img src = "assets/images/mysql_icon.png">
+                                    <div>MySQL</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "sequelizeIcon">
+                                    <img src = "assets/images/sequelize_icon.png">
+                                    <div>Sequelize</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "mongoIcon">
+                                    <img src = "assets/images/mongodb_icon.png">
+                                    <div>MongoDB</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "mongooseIcon">
+                                    <img src = "assets/images/mongoose_icon.png">
+                                    <div>Mongoose</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "restfulAPIicon">
+                                    <img src = "assets/images/restfulAPI_icon.png">
+                                    <div>Restful APIs</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "skillsSectionThree">
+                    <div class = "skillsSectionHeader">Other</div>
+                    <div id = "containerThree">
+                        <div id = "hexagonsThree">
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "mvcIcon">
+                                    <img src = "assets/images/mvc_icon.png">
+                                    <div>MVC</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "gitIcon">
+                                    <img src = "assets/images/git_icon.png">
+                                    <div>Git</div>
+                                </div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "githubIcon">
+                                    <img src = "assets/images/github_icon.png">
+                                    <div>GitHub</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "herokuIcon">
+                                    <img src = "assets/images/heroku_icon.png">
+                                    <div>Heroku</div>
+                                </div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "webpackicon">
+                                    <img src = "assets/images/webpack_icon.png">
+                                    <div>webpack</div>
+                                </div>
+                                <div class = "hexagon"></div>
+                                <div id = "jesticon">
+                                    <img src = "assets/images/jest_icon.png">
+                                    <div>Jest</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "hexagon"></div>
+                                <div id = "vscodeicon">
+                                    <img src = "assets/images/vscode_icon.png">
+                                    <div>VS Code</div>
+                                </div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                            <div class = "row"><!--this is the equivalent of row class-->
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                                <div class = "clearHexagon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id = "contactAndBlog">
+        <h2 class = "pageHeader">Contact & Blog</h2>
+        <div id = "contactAndBlogContainer">
+            <div id="devToLogo">
+                <a href="https://dev.to/jushendhillon9" target="blank">
+                    <img class = "devToLogoImage" src="assets/images/dev.to_logo.png" alt="Dev.to Logo">
+                </a>
+            </div>
+            <div id = "contactMeContainer">
+                <div class = "successMessage">Thanks for reaching out!</div>
+                <div id = "contactMe">Contact Me</div>
+                <div class = "linebreak"></div>
+                <div id = "contactMeSection">
+                    <form id = "contactMeFormContainer">
+                        <div class = "inputContainer">
+                            <p class = "inputDescription">Full Name</p>
+                            <input id = "contactInput1" class = "contactInput">
+                        </div>
+                        <div class = "linebreak"></div>
+                        <div class = "inputContainer">
+                            <p class = "inputDescription">E-mail</p>
+                            <input id = "contactInput2" class = "contactInput">
+                        </div>
+                        <div class = "linebreak"></div>
+                        <div class = "inputContainer">
+                            <p class = "inputDescription">Message</p>
+                            <input id = "contactInput3" class = "contactInput">
+                        </div>
+                        <div class = "linebreak"></div>
+                        <div id = "contactButtonContainer">
+                            <button id = "contactMeButton">Contact Me</button>
+                        </div>
+                    </form>
+                    <div id = "contactInfoSection">
+                        <p class = "contactInfo"> Contact Info<br> <span class = "contactEmail">jushen.dhillon@gmail.com <br>(949)-531-8565</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
