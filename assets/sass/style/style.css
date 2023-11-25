@@ -3017,6 +3017,12 @@
     bottom: 25px;
     right: 20px;
   }
+  #projectOne {
+    z-index: 0 !important;
+  }
+  #groupingsOne {
+    z-index: 5 !important;
+  }
   #borderEffectOne.show {
     transform: translateX(-90px);
     opacity: 1;
