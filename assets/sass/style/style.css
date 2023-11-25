@@ -3017,10 +3017,10 @@
     bottom: 25px;
     right: 20px;
   }
-  #projectOne {
+  #projectOne, #projectTwo, #projectThree {
     z-index: 0 !important;
   }
-  #groupingsOne {
+  #groupingsOne, #groupingsTwo, #groupingsThree {
     z-index: 5 !important;
   }
   #borderEffectOne.show {
