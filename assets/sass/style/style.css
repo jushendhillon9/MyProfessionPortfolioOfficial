@@ -687,6 +687,7 @@
 
 .contactEmail {
   font-size: 15px;
+  color: white;
 }
 
 @media screen and (max-width: 1450px) {
