@@ -127,28 +127,6 @@ let formatChallengeGroupings = () => {
 $(window).on("resize", formatChallengeGroupings)
 $(window).on("load", formatChallengeGroupings)
 
-const contactMeButton = $("#contactMeButton");
-const successMessage = $(".successMessage");
-contactMeButton.on("click", (event) => {
-  const input1 = $("#contactInput1").val().trim()
-  const input2 = $("#contactInput2").val().trim()
-  const input3 = $("#contactInput3").val().trim()
-  event.preventDefault();
-
-  if (input1 === "" || input2 === "" || input3 === "") {
-    return;
-  }
-  else {
-    successMessage.addClass("show");
-    $("#contactInput1").val("");
-    $("#contactInput2").val("");
-    $("#contactInput3").val("");
-    setTimeout(() => {
-      successMessage.removeClass("show")
-    }, 3000)
-  }
-})
-
 const contactMeBreakpoint = 750;
 let contactMeCount = 0;
 const contactMeReformat = () => {
@@ -186,3 +164,29 @@ const videos = document.querySelectorAll('.moduleChallengeVideo');
             video.setAttribute('controls', 'true');
         }
     }
+
+
+const contactMeButton = $("#contactMeButton");
+const successMessage = $(".successMessage");
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("contactMeFormContainer");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const input1 = $("#contactInput1").val().trim()
+    const input2 = $("#contactInput2").val().trim()
+    const input3 = $("#contactInput3").val().trim()
+
+  if (input1 === "" || input2 === "" || input3 === "") {
+    return;
+  }
+  else {
+    successMessage.addClass("show");
+    $("#contactInput1").val("");
+    $("#contactInput2").val("");
+    $("#contactInput3").val("");
+    setTimeout(() => {
+      successMessage.removeClass("show")
+    }, 3000)
+  }
+  });
+});
