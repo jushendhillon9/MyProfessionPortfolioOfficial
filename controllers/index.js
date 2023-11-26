@@ -7,7 +7,7 @@ router.use("/", homeRoute);
 router.use("/contactform", contactFormRouter);
 
 router.use("*", (req, res) => {
-    res.redirect("/");
+    res.redirect("/homepage");
   });
 
 module.exports = router;
