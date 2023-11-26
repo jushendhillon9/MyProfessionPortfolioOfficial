@@ -4,32 +4,28 @@ const projectsThree = $(".borderEffectThree").toArray();
 const descriptionsOne = $("#projectDescriptionOne").toArray();
 const descriptionsTwo = $("#projectDescriptionTwo").toArray();
 const descriptionsThree = $("#projectDescriptionThree").toArray();
+const contactMeButton = $("#contactMeButton");
+const successMessage = $(".successMessage");
 
+//disables scroll restoration
 document.addEventListener("DOMContentLoaded", function() {
-  // Check if the page is being loaded or refreshed
   const isReloaded = sessionStorage.getItem('isReloaded');
   if (isReloaded) {
-    // Perform the scroll to the top after a small delay
     setTimeout(function() {
       window.scrollTo(0, 0);
     }, 10);
   }
-
-  // Set sessionStorage to true if the page is reloaded
   sessionStorage.setItem('isReloaded', 'true');
 });
 
 window.addEventListener('beforeunload', function() {
-  // Clear sessionStorage when leaving the page
   sessionStorage.removeItem('isReloaded');
 });
-
-// Disable scroll restoration
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-
+//setup for intersection observer to toggle project animations
 const observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
@@ -41,32 +37,26 @@ const observer = new IntersectionObserver(
     rootMargin: '0px', // top right bottom left
   }
 )
-//need to convert projects to an array instad of a jquery object
-
 projectsOne.forEach(project => {
   observer.observe(project)
 });
-
 projectsTwo.forEach(project => {
   observer.observe(project)
 });
-
 projectsThree.forEach(project => {
   observer.observe(project)
 });
-
 descriptionsOne.forEach(description => {
   observer.observe(description)
 });
-
 descriptionsTwo.forEach(description => {
   observer.observe(description)
 });
-
 descriptionsThree.forEach(description => {
   observer.observe(description)
 });
 
+//resizing mySkills function
 const formatMySkills = () => {
   const sectionOne = $("#skillsSectionOne");
   const sectionTwo = $("#skillsSectionTwo");
@@ -86,13 +76,11 @@ const formatMySkills = () => {
     }
   }
 }
-
-
 $(window).on("resize", formatMySkills)
 $(window).on("load", formatMySkills)
 
 
-
+//resizing challengeGroupings function
 const breakpointWidth = 1237;
 let count = 1;
 let formatChallengeGroupings = () => {
@@ -106,7 +94,6 @@ let formatChallengeGroupings = () => {
       currentText = currentText.replace(/<br>/g, "");
       $(challengeDescription).text(currentText);
     });
-
     moduleChallengeGroupings.find(".linebreak").remove();
   } else {
     if (count === 0) {
@@ -123,10 +110,10 @@ let formatChallengeGroupings = () => {
     }
   }
 };
-
 $(window).on("resize", formatChallengeGroupings)
 $(window).on("load", formatChallengeGroupings)
 
+//resizing contactMe function
 const contactMeBreakpoint = 750;
 let contactMeCount = 0;
 const contactMeReformat = () => {
@@ -148,27 +135,35 @@ const contactMeReformat = () => {
 $(window).on("resize", contactMeReformat)
 $(window).on("load", contactMeReformat)
 
-
+//prompts ios video controls after clicking on module video
 const videos = document.querySelectorAll('.moduleChallengeVideo');
-
-    // Add a click event listener to each video
-    videos.forEach(video => {
-        video.addEventListener('click', () => toggleControls(video));
-    });
-
-    // Function to toggle the controls attribute
-    function toggleControls(video) {
-        if (video.hasAttribute('controls')) {
-            video.removeAttribute('controls');
-        } else {
-            video.setAttribute('controls', 'true');
-        }
+videos.forEach(video => {
+    video.addEventListener('click', () => toggleControls(video));
+});
+function toggleControls(video) {
+    if (video.hasAttribute('controls')) {
+        video.removeAttribute('controls');
+    } else {
+        video.setAttribute('controls', 'true');
     }
+}
 
 
-const contactMeButton = $("#contactMeButton");
-const successMessage = $(".successMessage");
-document.addEventListener("DOMContentLoaded", function () {
+//contactForm successMessage post route
+const contactSubmissionDetails = async () => {
+  const fullname = $("#contactInput1").val();
+  const sender = $("#contactInput2").val();
+  const message = $("#contactInput3").val();
+  const response = await fetch("/contactform/submit-form", {
+    method: "POST",
+    body: JSON.stringify({fullname, sender, message}),
+    headers: {"Content-Type":"application/json"}
+  })
+  await response.json();
+}
+
+//contactForm successMessage animation
+$(document).ready(function () {
   var form = document.getElementById("contactMeFormContainer");
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -180,6 +175,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
   else {
+    contactSubmissionDetails();
     successMessage.addClass("show");
     $("#contactInput1").val("");
     $("#contactInput2").val("");
