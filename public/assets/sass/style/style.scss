@@ -2373,6 +2373,9 @@ a:hover {
 
 
 @media screen and (max-width: 740px) {
+  .videosAnchorTag {
+    z-index: 9 !important;
+  }
   #aboutMeDescriptionAndButtons {
     width: 220px !important;
     margin-left: -130px !important;
