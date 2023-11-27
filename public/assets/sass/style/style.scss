@@ -712,6 +712,10 @@ a:hover {
   font-size: 15px;
 }
 
+#aboutMeDescriptionAndButtons {
+  margin-left: -30px !important;
+}
+
 @media screen and (max-width: 1450px){
   #workSectionTwo {
     margin-top: -35px;
@@ -1072,6 +1076,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1330px) {
+  #aboutMeDescriptionAndButtons {
+    margin-left: -90px !important;
+  }
   #contactAndBlog {
     height: 90vh;
   }
@@ -1674,10 +1681,17 @@ a:hover {
     width: 300px;
     margin-right: -120px;
   }
+  #aboutMeDescriptionAndButtons {
+    margin-left: -90px !important;
+  }
+  #navBarAndAboutMe {
+    background-position: center 35%;
+  }
 }
 
 
 @media screen and (max-width:1100px) {
+  
   #contactAndBlog {
     height: 90vh;
   }
@@ -2939,6 +2953,10 @@ a:hover {
 }
 
 @media screen and (max-width: 526px) {
+  #aboutMe img {
+    position: relative;
+    left: -40px !important;
+  }
   #navBar h1 {
     font-size: 18px;
   }
@@ -3201,6 +3219,10 @@ a:hover {
 }
 
 @media screen and (max-width: 425px) {
+  #aboutMe img {
+    position: relative;
+    left: -20px !important;
+  }
   #groupingsOne, #groupingsTwo, #groupingsThree {
     height: 70px !important;
     position: relative;
@@ -3540,6 +3562,10 @@ a:hover {
 }
 
 @media screen and (max-width: 375px) {
+  #aboutMe img {
+    position: relative;
+    left: -10px !important;
+  }
   #navBar {
     display: flex;
     flex-wrap: wrap;
@@ -3744,6 +3770,10 @@ a:hover {
 }
 
 @media screen and (max-width: 325px) {
+  #aboutMe img {
+    position: relative;
+    left: 0px !important;
+  }
   #navBar {
     display: flex;
     flex-wrap: wrap;
