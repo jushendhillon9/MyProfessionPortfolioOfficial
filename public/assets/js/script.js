@@ -135,18 +135,7 @@ const contactMeReformat = () => {
 $(window).on("resize", contactMeReformat)
 $(window).on("load", contactMeReformat)
 
-//prompts ios video controls after clicking on module video
-const videos = document.querySelectorAll('.moduleChallengeVideo');
-videos.forEach(video => {
-    video.addEventListener('click', () => toggleControls(video));
-});
-function toggleControls(video) {
-    if (video.hasAttribute('controls')) {
-        video.removeAttribute('controls');
-    } else {
-        video.setAttribute('controls', 'true');
-    }
-}
+
 
 
 //contactForm successMessage post route

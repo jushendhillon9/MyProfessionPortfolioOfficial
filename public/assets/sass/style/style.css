@@ -584,6 +584,10 @@ a:hover {
   margin-bottom: 50px;
 }
 
+#devToLogoLink {
+  z-index: 9 !important;
+}
+
 .devToLogoImage {
   height: 370px;
   width: 370px;
