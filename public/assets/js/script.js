@@ -137,7 +137,7 @@ $(window).on("load", contactMeReformat)
 
 
 
-
+/*
 //contactForm successMessage post route
 const contactSubmissionDetails = async () => {
   const fullname = $("#contactInput1").val();
@@ -149,7 +149,7 @@ const contactSubmissionDetails = async () => {
     headers: {"Content-Type":"application/json"}
   })
   await response.json();
-}
+}*/
 
 //contactForm successMessage animation
 $(document).ready(function () {
@@ -164,7 +164,7 @@ $(document).ready(function () {
     return;
   }
   else {
-    contactSubmissionDetails();
+    //contactSubmissionDetails();
     successMessage.addClass("show");
     $("#contactInput1").val("");
     $("#contactInput2").val("");

@@ -2789,8 +2789,6 @@ a:hover {
     width: 400px !important;
     font-size: 33px !important;
     padding-left: 12px !important;
-    position: fixed;
-    top: 310px !important;
   }
   #projectDescriptionOne {
     position: relative;
@@ -3173,6 +3171,15 @@ a:hover {
     opacity: 1;
     transition: 3s ease-in-out;
   }
+  .successMessage {
+    background-color: green;
+    height: 26.25px !important;
+    width: 300px !important;
+    font-size: 20px !important;
+    padding-left: 12px !important;
+    position: fixed;
+    top: 100px !important;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -3523,12 +3530,12 @@ a:hover {
   }
   .successMessage {
     background-color: green;
-    height: 35px !important;
-    width: 400px !important;
-    font-size: 25px !important;
+    height: 26.25px !important;
+    width: 300px !important;
+    font-size: 20px !important;
     padding-left: 12px !important;
     position: fixed;
-    top: 310px !important;
+    top: 100px !important;
   }
 }
 
