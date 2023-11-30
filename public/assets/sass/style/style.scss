@@ -3341,7 +3341,7 @@ a:hover {
   }
   #descriptionTwo {
     margin-left: 20px !important;
-    width: 140px !important;
+    width: 130px !important;
     margin-top: 15px !important;
   }
   #paragraphTwo {
@@ -3377,7 +3377,7 @@ a:hover {
   }
   #buttonsTwo {
     position: relative;
-    left: 0px !important;
+    left: -5px !important;
     top: -5px !important;
   }
   #borderEffectThree {
@@ -3891,6 +3891,8 @@ a:hover {
   }
   #buttonsTwo {
     margin-top: -20px !important;
+    position: relative;
+    left: 0px;
   }
   #borderEffectTwo.show {
     transform: translateX(-20px);
