@@ -155,7 +155,7 @@ a:hover {
 #aboutMeHeader {
   width: 100vw;
   position: relative;
-  left: 75px;
+  left: 85px;
 }
 
 #workSectionOne, #workSectionThree {
@@ -3548,6 +3548,7 @@ a:hover {
   }
   #aboutMe {
     margin-top: -60px !important;
+    margin-left: 160px;
   }
   #aboutMe img {
     margin-top: 190px;
