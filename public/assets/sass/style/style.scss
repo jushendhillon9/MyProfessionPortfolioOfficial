@@ -3891,7 +3891,7 @@ a:hover {
   }
   #workSectionThree {
     position: relative;
-    top: -320px !important;
+    top: -420px !important;
   }
   #paragraphTwo {
     margin-top: 20px !important;
@@ -3908,11 +3908,10 @@ a:hover {
   #projectTwo {
     position: relative;
     right: 10px !important;
-    top: -170px !important;
   }
   #groupingsTwo {
     position: relative;
-    top: -450px !important;
+    top: -450px;
   }
   #borderEffectTwo.show {
     transform: translateX(-20px);
@@ -4104,7 +4103,7 @@ a:hover {
     top: -230px !important;
   }
   #mySkillsPage {
-    margin-top: -1020px !important;
+    margin-top: -1150px !important;
   }
 }
 
@@ -4276,6 +4275,9 @@ a:hover {
 }
 
 @media screen and (max-width: 375px) {
+  #contactMeContainer {
+    margin-top: 70px !important;
+  }
   #titleTwo {
     position: relative;
     left: -40px !important;
@@ -4425,7 +4427,7 @@ a:hover {
     font-size: 16px !important;
   }
   #mySkillsPage {
-    margin-top: -1050px !important;
+    margin-top: -1150px !important;
   }
   #aboutMeDescriptionAndButtons {
     width: 140px !important;
@@ -4471,15 +4473,7 @@ a:hover {
   }
   #workSectionTwo {
     position: relative;
-    top: -190px !important;
     bottom: 0px !important;
-  }
-  #workSectionThree {
-    position: relative;
-    top: -350px !important;
-  }
-  #groupingsTwo {
-    top: -455px !important;
   }
   #groupingsThree {
     top: -630px !important
@@ -4786,11 +4780,6 @@ a:hover {
     width: 140px !important;
     margin-right: 10px !important;
   }
-  #groupingsTwo {
-    position: relative;
-    position: relative;
-    top: -455px !important;
-  }
   #groupingsOne {
     position: relative;
     top: -190px !important;
@@ -4802,13 +4791,17 @@ a:hover {
   .videosAnchorTag {
     width: 80% !important;
   }
+  #workSectionOne {
+    position: relative;
+    top: -90px !important;
+  }
   #workSectionTwo {
     position: relative;
-    top: -220px !important;
+    top: -460px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -430px !important;
+    top: -550px !important;
   }
   #projectTwo {
     position: relative;
@@ -4816,5 +4809,11 @@ a:hover {
   }
   .contactInfo {
     margin-bottom: -50px;
+  }
+  #mySkillsPage {
+    margin-top: -1320px !important;
+  }
+  #contactMeContainer {
+    margin-top: 90px !important;
   }
 }
