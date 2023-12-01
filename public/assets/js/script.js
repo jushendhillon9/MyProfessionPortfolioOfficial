@@ -111,7 +111,7 @@ let formatChallengeGroupings = () => {
   }
 };
 $(window).on("resize", formatChallengeGroupings)
-$(window).on("load", formatChallengeGroupings)
+$(document).ready(formatChallengeGroupings)
 
 //resizing contactMe function
 const contactMeBreakpoint = 750;
