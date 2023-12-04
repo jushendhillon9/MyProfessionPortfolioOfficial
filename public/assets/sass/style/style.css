@@ -3552,6 +3552,16 @@ a:hover {
   }
 }
 @media screen and (max-width: 425px) {
+  #contactMeFormContainer {
+    position: relative;
+    bottom: 5px;
+  }
+  #contactMeButton {
+    color: black;
+    padding: -5px;
+    position: relative;
+    bottom: 3px;
+  }
   #titleOne, #titleTwo, #titleThree {
     font-size: 20px !important;
   }
