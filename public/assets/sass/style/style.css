@@ -35,8 +35,8 @@ a:hover {
   color: white;
 }
 
-aboutMeSectionLink
-#aboutMeSectionLink:active {
+
+#aboutMeSectionLink:active, #blogContactSectionLink, #skillsSectionLin {
   z-index: -3 !important;
 }
 
@@ -3681,7 +3681,7 @@ aboutMeSectionLink
     border-radius: 9px;
   }
   #groupingsOne {
-    top: -180px !important;
+    top: -170px !important;
   }
   .challengeDescription {
     font-size: 17px !important;
@@ -3722,11 +3722,11 @@ aboutMeSectionLink
   }
   #workSectionTwo {
     position: relative;
-    top: -180px;
+    top: -380px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -420px !important;
+    top: -400px !important;
   }
   #paragraphTwo {
     margin-top: 20px !important;
@@ -3746,7 +3746,7 @@ aboutMeSectionLink
   }
   #groupingsTwo {
     position: relative;
-    top: -450px;
+    top: -250px !important;
   }
   #borderEffectTwo.show {
     transform: translateX(-20px);
