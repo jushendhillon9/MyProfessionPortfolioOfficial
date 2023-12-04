@@ -35,6 +35,15 @@ a:hover {
   color: white;
 }
 
+aboutMeSectionLink
+#aboutMeSectionLink:active {
+  z-index: -3 !important;
+}
+
+#projectsSectionLink:active {
+  z-index: 9 !important;
+}
+
 #introduction {
   color: white;
   position: absolute;
