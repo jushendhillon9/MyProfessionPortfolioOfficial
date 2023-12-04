@@ -3562,7 +3562,7 @@ a:hover {
 }
 @media screen and (max-width: 425px) {
   #aboutMe {
-    margin-top: -90px;
+    margin-top: -90px !important;
   }
   #contactMeFormContainer {
     position: relative;
@@ -3857,9 +3857,6 @@ a:hover {
     font-size: 8px;
     width: 120px;
     padding: 10px !important;
-  }
-  #aboutMe {
-    margin-top: -60px !important;
   }
   #aboutMe img {
     margin-top: 190px;
