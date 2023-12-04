@@ -175,3 +175,26 @@ $(document).ready(function () {
   }
   });
 });
+
+// Get all the links with specific IDs
+const sectionLinks = document.querySelectorAll('#aboutMeSectionLink, #projectsSectionLink, #skillsSectionLink, #blogContactSectionLink');
+
+// Add the same event listener to each link
+sectionLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    // Prevent the default behavior (scrolling to the section)
+
+    // Your custom actions or functions can go here
+    // For example, you can add code to show a modal or navigate to another page.
+
+    // Set the z-index of #projectsSectionLink to 9
+    document.getElementById('projectsHeader').style.zIndex = 10;
+
+    document.getElementById('projectsHeader').style.position = 'relative';
+
+    document.getElementById('projectsHeader').style.top = '20px';
+
+    // Set the z-index of the other three links to -3
+   // document.getElementById('homePage').style.paddingBottom = "10px";
+  });
+});
