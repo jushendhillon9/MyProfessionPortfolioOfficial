@@ -3561,6 +3561,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 425px) {
+  #aboutMe {
+    margin-top: -90px;
+  }
   #contactMeFormContainer {
     position: relative;
     bottom: 5px;
