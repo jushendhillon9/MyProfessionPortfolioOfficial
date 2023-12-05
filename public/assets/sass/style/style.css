@@ -35,15 +35,6 @@ a:hover {
   color: white;
 }
 
-
-#aboutMeSectionLink:active, #blogContactSectionLink:active, #skillsSectionLink:active {
-  z-index: -3 !important;
-}
-
-#projectsSectionLink:active {
-  z-index: 9 !important;
-}
-
 #introduction {
   color: white;
   position: absolute;
@@ -58,6 +49,7 @@ a:hover {
   max-width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
 #navBarAndAboutMe {
@@ -446,6 +438,11 @@ a:hover {
 
 #projectTwoDescription {
   justify-content: flex-end;
+}
+
+#aboutMe {
+  position: relative;
+  bottom: 40px;
 }
 
 .moduleChallengeGroupings {
@@ -3561,19 +3558,6 @@ a:hover {
   }
 }
 @media screen and (max-width: 425px) {
-  #aboutMe {
-    margin-top: -90px !important;
-  }
-  #contactMeFormContainer {
-    position: relative;
-    bottom: 5px;
-  }
-  #contactMeButton {
-    color: black;
-    padding: -5px;
-    position: relative;
-    bottom: 5px;
-  }
   #titleOne, #titleTwo, #titleThree {
     font-size: 20px !important;
   }
@@ -3684,7 +3668,7 @@ a:hover {
     border-radius: 9px;
   }
   #groupingsOne {
-    top: -170px !important;
+    top: -180px !important;
   }
   .challengeDescription {
     font-size: 17px !important;
@@ -3725,11 +3709,11 @@ a:hover {
   }
   #workSectionTwo {
     position: relative;
-    top: -390px !important;
+    top: -180px;
   }
   #workSectionThree {
     position: relative;
-    top: -400px !important;
+    top: -420px !important;
   }
   #paragraphTwo {
     margin-top: 20px !important;
@@ -3749,7 +3733,7 @@ a:hover {
   }
   #groupingsTwo {
     position: relative;
-    top: -250px !important;
+    top: -450px;
   }
   #borderEffectTwo.show {
     transform: translateX(-20px);
@@ -3846,7 +3830,7 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: -90px !important;
+    top: -70px !important;
   }
   #aboutMeDescriptionAndButtons {
     width: 140px !important;
@@ -3857,6 +3841,9 @@ a:hover {
     font-size: 8px;
     width: 120px;
     padding: 10px !important;
+  }
+  #aboutMe {
+    margin-top: -60px !important;
   }
   #aboutMe img {
     margin-top: 190px;
@@ -3895,8 +3882,6 @@ a:hover {
     height: 190px;
     width: 190px;
     margin-bottom: -170px;
-    position: relative;
-    top: 10px;
   }
   #contactMeContainer {
     margin-top: 30px;

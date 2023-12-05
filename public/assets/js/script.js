@@ -176,25 +176,37 @@ $(document).ready(function () {
   });
 });
 
-// Get all the links with specific IDs
-const sectionLinks = document.querySelectorAll('#aboutMeSectionLink, #projectsSectionLink, #skillsSectionLink, #blogContactSectionLink');
 
-// Add the same event listener to each link
+
+const sectionLinks = document.querySelectorAll('#projectsSectionLink, #skillsSectionLink, #blogContactSectionLink');
+
 sectionLinks.forEach(link => {
-  link.addEventListener('click', function(event) {
-    // Prevent the default behavior (scrolling to the section)
-
-    // Your custom actions or functions can go here
-    // For example, you can add code to show a modal or navigate to another page.
-
-    // Set the z-index of #projectsSectionLink to 9
-    document.getElementById('projectsHeader').style.zIndex = 10;
-
-    document.getElementById('projectsHeader').style.position = 'relative';
-
-    document.getElementById('projectsHeader').style.top = '20px';
-
-    // Set the z-index of the other three links to -3
-   // document.getElementById('homePage').style.paddingBottom = "10px";
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: 'smooth' // Use smooth scrolling
+    });
   });
 });
+
+const aboutMeLink = document.querySelector("#aboutMeSectionLink");
+
+aboutMeLink.addEventListener("click", (event) => {
+  event.preventDefault();
+  const targetId = event.currentTarget.getAttribute("href").substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    const scrollPosition = targetElement.offsetTop - window.innerHeight + targetElement.clientHeight;
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  }
+});
+
+

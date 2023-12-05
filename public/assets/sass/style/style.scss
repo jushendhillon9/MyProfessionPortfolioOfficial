@@ -57,6 +57,7 @@ a:hover {
   max-width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-bottom: 100px;
 }
 
 #navBarAndAboutMe {
@@ -439,6 +440,11 @@ a:hover {
 
 #projectTwoDescription {
   justify-content: flex-end;
+}
+
+#aboutMe {
+  position: relative;
+  bottom: 40px;
 }
 
 .moduleChallengeGroupings {
