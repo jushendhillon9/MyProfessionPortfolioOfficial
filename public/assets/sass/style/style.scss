@@ -1048,6 +1048,9 @@ a:hover {
 }
 
 @media screen and (max-width: 1237px) {
+  #mySkillsPage {
+    margin-top: 270px;
+  }
   .projectDescription #titleOne {
     position: relative;
     top: 0px;
@@ -2219,6 +2222,9 @@ a:hover {
 }
 
 @media screen and (max-width:920px) {
+  #videosAnchorTag3 {
+    width: 60% !important;
+  }
   #contactAndBlog {
     height: 75vh;
   }
