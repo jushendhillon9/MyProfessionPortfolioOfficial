@@ -2009,6 +2009,10 @@ a:hover {
 }
 
 @media screen and (max-width: 981px) {
+  #aboutMe {
+    position: relative;
+    left: 50px;
+  }
   #borderEffectThree.show {
     transform: translateX(0px);
   }
@@ -2697,6 +2701,10 @@ a:hover {
 }
 
 @media screen and (max-width:750px) {
+  #aboutMe {
+    position: relative;
+    left: 60px;
+  }
   #contactAndBlog {
     height: 75vh;
   }
@@ -3966,6 +3974,15 @@ a:hover {
 }
 
 @media screen and (max-width: 425px) {
+  #aboutMe {
+    position: relative;
+    left: 45px;
+  }
+  #aboutMeHeader {
+    width: 105vw;
+    position: relative;
+    left: 120px;
+  }
   #projectDescriptionOne.show {
     position: relative;
     top: -70px !important
@@ -4552,6 +4569,15 @@ a:hover {
 }
 
 @media screen and (max-width: 390px) {
+  #aboutMe {
+    position: relative;
+    left: 25px;
+  }
+  #aboutMeHeader {
+    width: 105vw;
+    position: relative;
+    left: 110px;
+  }
   #projectDescriptionThree.show {
     position: relative;
     top: -260px !important;
@@ -4839,6 +4865,19 @@ a:hover {
 }
 
 @media screen and (max-width: 350px) {
+  #contactMeFormContainer {
+    position: relative;
+    left: -35px;
+  }
+  #aboutMe {
+    position: relative;
+    left: 20px;
+  }
+  #aboutMeHeader {
+    width: 105vw;
+    position: relative;
+    left: 90px;
+  }
   #titleOne {
     font-size: 15px !important;
   }
@@ -5097,7 +5136,7 @@ a:hover {
   }
   #contactInfoSection {
     text-align: right;
-    margin-right: -30px;
+    margin-right: -20px;
   }
   .videosAnchorTag {
     width: 95% !important;
@@ -5174,5 +5213,17 @@ a:hover {
   #groupingsThree {
     position: relative;
     top: -640px !important;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  #aboutMe {
+    position: relative;
+    left: 10px;
+  }
+  #aboutMeHeader {
+    width: 105vw;
+    position: relative;
+    left: 90px;
   }
 }
