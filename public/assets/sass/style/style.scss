@@ -295,6 +295,23 @@ a:hover {
     transform: scale(1.12);
   }
 }
+  
+  #borderEffectFour {
+    width: 890px;
+    height: 500px;
+    background-color: red;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+    #projectImageFour {
+      width: 787px;
+      height: 430px;
+      z-index: 1;
+      margin-top: 65px;
+      margin-right: 80px; //10 more pixels above the border effect than to left of border effect
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.12);
+    }
+  }
 
 #borderEffectThree {
   margin-left: 30px;
@@ -345,6 +362,15 @@ a:hover {
     position: relative;
     top: 33px;
   }
+
+  #titleFour {
+    background-image: linear-gradient(to right, beige, #00bfe8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 33px;
+  }
+  
   #titleThree {
     font-size: 69px;
     margin: 20px;
@@ -380,6 +406,14 @@ a:hover {
     font-size: 20px;
     text-align: right;
   }
+  #descriptionFour {
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+    margin-right: 85px;
+    font-size: 20px;
+    text-align: right;
+  }
   #paragraphOne, #paragraphThree {
     font-weight: bold;
     margin: 20px;
@@ -403,6 +437,18 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  #paragraphFour {
+    text-align: right;
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+    margin-right: 85px;
+    font-size: 20px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   #buttonsOne {
     margin-left: 45px;
     button {
@@ -414,6 +460,19 @@ a:hover {
     }
   }
   #buttonsTwo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 75px;
+    button {
+      background-color: transparent;
+      color: white;
+      width: 90px;
+      height: 40px;
+      margin: 10px;
+    }
+  }
+  #buttonsFour {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -766,14 +825,23 @@ a:hover {
     font-size: 50px !important;
     margin-bottom: 0px !important;
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #titleFour {
+    margin-bottom: 10px;
+  }
+  #descriptionFour {
+    margin-top: 40px !important;
+    margin-bottom: -10px !important;
+    color: red;
+    font-size: 17px !important;
+  }
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 17px !important;
   }
   #note {
     font-size: 14px !important;
     margin-top: 5px !important;
   }
-  #paragraphOne, #paragraphTwo, #paragraphThree {
+  #paragraphOne, #paragraphTwo, #paragraphThree, #paragraphFour {
     font-size: 17px !important;
   }
   #borderEffectOne {
@@ -802,6 +870,24 @@ a:hover {
     z-index: 0;
     transition: transform 0.2s ease-in-out;
     #projectImageTwo {
+      width: 662.2px;
+      height: 369.8px;
+      z-index: 1;
+      margin-top: 65px;
+      margin-right: 80px; //10 more pixels above the border effect than to left of border effect
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.12);
+    }
+  }
+
+  #borderEffectFour {
+    margin-right: 30px;
+    width: 770px;
+    height: 432.6px;
+    background-color: red;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+    #projectImageFour {
       width: 662.2px;
       height: 369.8px;
       z-index: 1;
@@ -896,7 +982,7 @@ a:hover {
 
   #workSectionOne {
     position: relative;
-    top: 70px;
+    top: 170px;
   }
   
   #groupingsOne {
@@ -907,7 +993,7 @@ a:hover {
 
   #workSectionTwo {
     position: relative;
-    top: 250px;
+    top: 450px;
   }
 
   #groupingsTwo {
@@ -924,15 +1010,20 @@ a:hover {
     top: -355px;
   }
 
+  #workSectionFour {
+    position: relative;
+    top: 300px;
+  }
+
   #mySkillsPage {
-    margin-top: 300px;
+    margin-top: 50px !important;
   }
 
   #titleOne, #titleTwoContainer, #titleThree {
     font-size: 52px !important;
     margin-bottom: 0px !important;
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 16px !important;
   }
   #descriptionOne {
@@ -944,7 +1035,7 @@ a:hover {
     margin-top: -3px !important;
     margin-bottom: -3px !important;
   }
-  #paragraphOne, #paragraphTwo, #paragraphThree {
+  #paragraphOne, #paragraphTwo, #paragraphThree, #paragraphFour {
     font-size: 16px !important;
   }
   #paragraphOne {
@@ -989,6 +1080,27 @@ a:hover {
       transform: scale(1.12);
     }
   }
+
+  #borderEffectFour {
+    position: relative;
+    bottom: 50px;
+    width: 650px;
+    height: 365.2px;
+    background-color: red;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+    #projectImageFour {
+      width: 559px;
+      height: 318px;
+      z-index: 1;
+      position: relative;
+      left: 25px;
+      bottom: 15px; //10 more pixels above the border effect than to left of border effect
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.12);
+    }
+  }
+
 
   #borderEffectThree {
     margin-left: 30px;
@@ -1106,6 +1218,26 @@ a:hover {
     z-index: 0;
     transition: transform 0.2s ease-in-out;
     #projectImageTwo {
+      width: 559px;
+      height: 318px;
+      z-index: 1;
+      position: relative;
+      left: 25px;
+      bottom: 15px; //10 more pixels above the border effect than to left of border effect
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.12);
+    }
+  }
+
+  #borderEffectFour {
+    position: relative;
+    top: -250px;
+    width: 650px;
+    height: 365.2px;
+    background-color: red;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+    #projectImageFour {
       width: 559px;
       height: 318px;
       z-index: 1;
@@ -1289,15 +1421,19 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: 50px;
+    top: -220px;
   }
   #workSectionTwo {
     position: relative;
-    top: 70px;
+    top: 150px;
   }
   #workSectionThree {
     position: relative;
-    top: 60px;
+    top: 150px;
+  }
+  #workSectionFour {
+    position: relative;
+    top: 200px;
   }
   #groupingsOne {
     position: relative;
@@ -1357,6 +1493,25 @@ a:hover {
     }
   }
 
+  #borderEffectFour {
+    position: relative;
+    top: -250px;
+    width: 525px;
+    height: 314px;
+    z-index: 0;
+    transition: transform 0.2s ease-in-out;
+    #projectImageFour {
+      width: 455.8px;
+      height: 270px;
+      z-index: 1;
+      position: relative;
+      left: 15px;
+      bottom: 20px; //10 more pixels above the border effect than to left of border effect
+      transition: transform 0.2s ease-in-out;
+      transform: scale(1.12);
+    }
+  }
+
   #borderEffectThree {
     position: relative;
     top: -300px;
@@ -1377,7 +1532,7 @@ a:hover {
     }
   }
   #mySkillsPage {
-    margin-top: -30px;
+    margin-top: -400px !important;
   }
   .challengeDescription {
     font-size: 40px !important;
@@ -1623,6 +1778,15 @@ a:hover {
     }
   }
 
+  #borderEffectFour {
+    width: 550px;
+    height: 300px;
+    #projectImageFour {
+      width: 473px;
+      height: 260px;
+    }
+  }
+
   #borderEffectThree {
     position: relative;
     top: -300px;
@@ -1646,10 +1810,10 @@ a:hover {
     position: relative;
     right: 25px;
   }
-  #titleOne, #titleTwo, #titleThree {
+  #titleOne, #titleTwo, #titleThree, #titleFour {
     font-size: 44px !important;
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 15px !important;
   }
   #descriptionTwo, #paragraphTwo {
@@ -2031,6 +2195,11 @@ a:hover {
     right: 10px !important;
     top: -10px !important;
   }
+  #buttonsFour {
+    position: relative;
+    right: 70px !important;
+    top: -10px !important;
+  }
   #projectDescriptionOne.show {
     position: relative;
     top: -35px !important;
@@ -2058,20 +2227,27 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: 30px;
+    top: -400px;
   }
   #workSectionTwo {
     position: relative;
-    top: -20px;
+    top: 0px;
   }
   #workSectionThree {
     position: relative;
-    top: -90px;
+    top: 110px;
+  }
+  #workSectionFour {
+    position: relative;
+    top: 200px;
   }
   #mySkillsPage {
-    margin-top: -240px !important;
+    margin-top: -220px !important;
   }
-  #titleOne, #titleTwo, #titleThree {
+  #workPage {
+    height: 2200px;
+  }
+  #titleOne, #titleTwo, #titleThree, #titleFour {
     font-size: 40px !important;
   }
   #titleOne {
@@ -2080,6 +2256,11 @@ a:hover {
   #titleTwo {
     position: relative;
     top: 30px;
+  }
+  #titleFour {
+    margin-bottom: -30px;
+    position: relative;
+    right: 70px;
   }
   #borderEffectOne {
     width: 475px;
@@ -2103,6 +2284,20 @@ a:hover {
       bottom: 30px;
     }
   }
+
+  #borderEffectFour {
+    position: relative;
+    top: -230px !important;
+    width: 475px;
+    height: 250px;
+    #projectImageFour {
+      width: 410px;
+      height: 225px;
+      position: relative;
+      bottom: 30px;
+    }
+  }
+
   #borderEffectThree {
     width: 475px;
     height: 250px;
@@ -2125,6 +2320,13 @@ a:hover {
     top: 30px;
     right: 30px !important;
   }
+  #descriptionFour {
+    font-size: 12px !important;
+    position: static;
+    margin-right: 140px !important;
+    margin-top: 70px !important;
+    margin-bottom: -30px !important;
+  }
   #paragraphOne {
     font-size: 12px !important;
     margin-right: 30px !important;
@@ -2134,6 +2336,12 @@ a:hover {
     margin-top: 50px !important;
     position: relative;
     right: 30px !important;
+  }
+  #paragraphFour {
+    font-size: 12px !important;
+    margin-top: 50px !important;
+    position: static;
+    margin-right: 140px !important;
   }
   #paragraphThree {
     font-size: 12px !important;
@@ -2195,14 +2403,8 @@ a:hover {
     bottom: 10px;
     right: 33px;
   }
-  #mySkillsPage {
-    margin-top: -180px !important;
-  }
   .challengeDescription {
     margin-top: -7px;
-  }
-  #mySkillsPage {
-    margin-top: -220px !important;
   }
   #projectDescriptionThree.show {
     position: relative;
@@ -2358,15 +2560,15 @@ a:hover {
 @media screen and (max-width:850px) {
   #workSectionOne {
     position: relative;
-    top: -20px;
+    top: -500px;
   }
   #workSectionTwo {
     position: relative;
-    top: -150px;
+    top: -20px;
   }
   #workSectionThree {
     position: relative;
-    top: -300px;
+    top: 120px;
   }
   #projectDescriptionThree.show {
     position: relative;
@@ -2406,6 +2608,17 @@ a:hover {
       left: 10px;
     }
   }
+  #borderEffectFour {
+    width: 390px;
+    height: 200px;
+    #projectImageFour {
+      width: 344px;
+      height: 180px;
+      position: relative;
+      bottom: 35px;
+      left: 10px;
+    }
+  }
   #borderEffectThree {
     width: 390px;
     height: 200px;
@@ -2414,7 +2627,7 @@ a:hover {
       height: 180px;
     }
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 12px !important;
   }
   #note {
@@ -2427,6 +2640,10 @@ a:hover {
   }
   #mySkillsPage {
     margin-top: -460px !important;
+  }
+  #buttonsFour {
+    position: relative;
+    right: 70px !important;
   }
 }
 
@@ -2614,22 +2831,26 @@ a:hover {
   #groupingsOne, #groupingsTwo, #groupingsThree {
     height: 95px !important;
   }
+  #workSectionOne {
+    position: relative;
+    top: -650px !important;
+  }
   #workSectionTwo {
     position: relative;
-    top: -250px !important;
+    top: -100px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -490px !important;
+    top: 100px !important;
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 10px !important;
   }
-  #paragraphOne, #paragraphTwo, #paragraphThree {
+  #paragraphOne, #paragraphTwo, #paragraphThree, #paragraphFour {
     font-size: 9px !important;
     margin-bottom: 10px !important;
   }
-  #titleOne, #titleTwo, #titleThree {
+  #titleOne, #titleTwo, #titleThree, #titleFour {
     font-size: 33px !important;
   }
   #borderEffectOne {
@@ -2647,6 +2868,17 @@ a:hover {
     width: 320px;
     height: 165px;
     #projectImageTwo {
+      width: 280px;
+      height: 150px;
+      position: relative;
+      bottom: 35px;
+      left: 10px;
+    }
+  }
+  #borderEffectFour {
+    width: 320px;
+    height: 165px;
+    #projectImageFour {
       width: 280px;
       height: 150px;
       position: relative;
@@ -2913,6 +3145,19 @@ a:hover {
       left: 10px;
     }
   }
+  #borderEffectFour {
+    position: relative;
+    top: -230px !important;
+    width: 325px;
+    height: 185px;
+    #projectImageFour {
+      width: 284px;
+      height: 161px;
+      position: relative;
+      bottom: 40px;
+      left: 10px;
+    }
+  }
   #borderEffectThree {
     width: 330px;
     height: 185px;
@@ -3001,11 +3246,11 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: -50px;
+    top: -800px !important;
   }
   #workSectionTwo {
     position: relative;
-    top: -300px !important;
+    top: -200px !important;
   }
   #groupingsTwo {
     position: relative;
@@ -3017,10 +3262,10 @@ a:hover {
   }
   #workSectionThree {
     position: relative;
-    top: -560px !important;
+    top: 100px !important;
   }
   #mySkillsPage {
-    margin-top: -865px !important;
+    margin-top: -950px !important;
   }
   #groupingsOne, #groupingsTwo, #groupingsThree {
     height: 80px !important;
@@ -3029,6 +3274,17 @@ a:hover {
     width: 290px;
     height: 160px;
     #projectImageTwo {
+      width: 255px;
+      height: 138px;
+      position: relative;
+      bottom: 45px;
+      right: 25px;
+    }
+  }
+  #borderEffectFour {
+    width: 290px;
+    height: 160px;
+    #projectImageFour {
       width: 255px;
       height: 138px;
       position: relative;
@@ -3103,9 +3359,16 @@ a:hover {
   #projectDescriptionOne.show {
     transform: translateX(70px);
   }
-  #descriptionOne, #descriptionTwo, #descriptionThree {
+  #descriptionOne, #descriptionTwo, #descriptionThree, #descriptionFour {
     font-size: 8px !important;
     margin-top: 15px !important;
+  }
+  #descriptionFour {
+    margin-bottom: -50px !important;
+  }
+  #titleFour {
+    position: relative;
+    top: -20px !important;
   }
   #descriptionThree {
     width: 220px;
@@ -3123,7 +3386,7 @@ a:hover {
     position: relative;
     top: 5px;
   }
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     font-size: 8px !important;
     border-top: 0.5px solid white !important;
     border-bottom: 0.5px solid white !important;
@@ -3190,11 +3453,11 @@ a:hover {
   }
   #workSectionTwo {
     position: relative;
-    top: -350px !important;
+    top: -190px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -650px !important;
+    top: 120px !important;
   }
   #groupingsOne {
     position: relative;
@@ -3229,6 +3492,10 @@ a:hover {
 }
 
 @media screen and (max-width: 611px) {
+  #titleFour {
+    position: relative;
+    top: 10px !important;
+  }
   #projectDescriptionOne.show {
     position: relative;
     top: -60px !important;
@@ -3298,6 +3565,17 @@ a:hover {
       right: 25px;
     }
   }
+  #borderEffectFour {
+    width: 250px;
+    height: 143px;
+    #projectImageFour {
+      width: 215px;
+      height: 123px;
+      position: relative;
+      bottom: 45px;
+      right: 25px;
+    }
+  }
   #borderEffectThree {
     width: 250px;
     height: 143px;
@@ -3309,7 +3587,7 @@ a:hover {
       right: 20px;
     }
   }
-  #titleTwo, #titleThree {
+  #titleTwo, #titleThree, #titleFour {
     font-size: 30px !important;
     margin: 0px !important;
   }
@@ -3361,7 +3639,7 @@ a:hover {
     bottom: 5px !important;
   }
 
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     font-size: 7px !important;
     border-top: 0.1px solid white !important;
     border-bottom: 0.1px solid white !important;
@@ -3525,15 +3803,15 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: -80px;
+    top: -850px !important;
   }
   #workSectionTwo {
     position: relative;
-    top: -400px !important;
+    top: -240px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -710px !important;
+    top: 90px !important;
   }
   .projectDescription #titleTwo {
     position: relative;
@@ -3555,6 +3833,14 @@ a:hover {
     width: 220px;
     height: 127px;
     #projectImageTwo {
+      width: 190px;
+      height: 110px;
+    }
+  }
+  #borderEffectFour {
+    width: 220px;
+    height: 127px;
+    #projectImageFour {
       width: 190px;
       height: 110px;
     }
@@ -3661,6 +3947,11 @@ a:hover {
 }
 
 @media screen and (max-width: 526px) {
+  #titleFour {
+    position: relative;
+    top: 50px !important;
+    left: -60px !important;
+  }
   #aboutMe img {
     position: relative;
     left: -40px !important;
@@ -3698,19 +3989,23 @@ a:hover {
   }
   #groupingsThree {
     position: relative;
-    top: -260px !important;
+    top: -310px !important;
   }
   #workSectionOne {
     position: relative;
-    top: -50px !important;
+    top: -950px !important;
   }
   #workSectionTwo {
     position: relative;
-    top: -400px !important;
+    top: -310px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -750px !important;
+    top: 50px !important;
+  }
+  #workSectionFour {
+    position: relative;
+    top: 170px;
   }
   #mySkillsPage {
     margin-top: -1080px !important;
@@ -3728,11 +4023,15 @@ a:hover {
     transition: 3s ease-in-out;
     opacity: 0;
   }
+
+  #borderEffectFour {
+    transform: translateX(100px);
+    transition: 3s ease-in-out;
+  }
   
   #borderEffectThree {
     transform: translateX(-100px);
     transition: 3s ease-in-out;
-    opacity: 0;
   }
   
   #projectDescriptionOne {
@@ -3890,6 +4189,20 @@ a:hover {
       bottom: 50px !important;
     }
   }
+
+  #borderEffectFour {
+    width: 207px;
+    height: 120px;
+    #projectImageFour {
+      width: 180px;
+      height: 106px;
+      margin-right: 0px !important;
+      margin-left: 0px !important;
+      margin-right: 90px !important;
+      position: relative;
+      bottom: 50px !important;
+    }
+  }
   #borderEffectThree {
     width: 205px;
     height: 120px;
@@ -3947,18 +4260,18 @@ a:hover {
     right: 0px !important;
     left: 45px !important;
   }
-  #titleTwo {
+  #titleTwo, #titleFour {
     font-size: 22px !important;
     position: relative;
     left: -20px !important;
   }
-  #descriptionTwo {
+  #descriptionTwo, #descriptionFour {
     font-size: 8px !important;
     width: 190px !important;
     position: relative;
     left: 15px !important;
   }
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     font-size: 7px !important;
     margin-right: 15px !important;
   }
@@ -4003,7 +4316,14 @@ a:hover {
   }
   #descriptionTwo {
     position: relative;
-    left: 35px !important;
+    left: 55px !important;
+  }
+  #descriptionFour {
+    margin-left: -5px !important;
+    margin-top: 55px !important;
+    margin-bottom: -15px !important;
+    font-size: 6px !important;
+    width: 170px !important;
   }
   #buttonsTwo {
     position: relative;
@@ -4087,7 +4407,7 @@ a:hover {
     position: relative;
     left: 25px !important;
   }
-  #paragraphOne, #paragraphTwo{
+  #paragraphOne, #paragraphTwo, #paragraphFour {
     font-size: 6px !important;
     margin-right: 15px !important;
   }
@@ -4148,7 +4468,7 @@ a:hover {
     }
   }
   #descriptionTwo {
-    margin-left: -55px !important;
+    margin-left: -75px !important;
     margin-top: 5px !important;
     margin-bottom: 15px !important;
     font-size: 6px !important;
@@ -4164,13 +4484,13 @@ a:hover {
   }
   #workSectionTwo {
     position: relative;
-    top: -180px;
+    top: -290px !important;
   }
   #workSectionThree {
     position: relative;
-    top: -420px !important;
+    top: 360px !important;
   }
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     margin-top: 20px !important;
     padding-top: 1px !important;
     padding-bottom: 1px !important;
@@ -4283,7 +4603,7 @@ a:hover {
   }
   #workSectionOne {
     position: relative;
-    top: -70px !important;
+    top: -880px !important;
   }
   #aboutMeDescriptionAndButtons {
     width: 140px !important;
@@ -4377,7 +4697,7 @@ a:hover {
     top: -240px !important;
   }
   #mySkillsPage {
-    margin-top: -1020px !important;
+    margin-top: -1220px !important;
   }
   #groupingsOne {
     position: relative;
@@ -4391,13 +4711,14 @@ a:hover {
     position: relative;
     top: -625px !important
   }
-  #workSectionTwo {
-    position: relative;
-    top: -330px !important;
+  #borderEffectFour {
+    transform: translateX(-130px);
+    transition: 3s ease-in-out;
   }
-  #workSectionThree {
-    position: relative;
-    top: -320px !important;
+  .projectDescription {
+    #buttonsFour {
+      margin-right: 60px;
+    }
   }
 }
 
@@ -4415,7 +4736,7 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
-  #descriptionOne, #descriptionTwo {
+  #descriptionOne, #descriptionTwo, #descriptionFour {
     font-size: 6px !important;
   }
   #descriptionThree {
@@ -4425,7 +4746,7 @@ a:hover {
     position: relative;
     left: 15px !important;
   }
-  #paragraphOne, #paragraphTwo {
+  #paragraphOne, #paragraphTwo, #paragraphFour {
     font-size: 5px !important;
     margin-right: 15px !important;
   }
@@ -4504,6 +4825,27 @@ a:hover {
       margin-left: -12px !important;
     }
   }
+  #borderEffectFour {
+    width: 167px;
+    height: 96px;
+    position: relative;
+    left: -10px;
+    top: -215px !important;
+    #projectImageFour {
+      width: 150px;
+      height: 82.4px;
+      position: relative;
+      bottom: 50px !important;
+      margin-left: -12px !important;
+    }
+  }
+
+  .projectDescription {
+    #buttonsFour {
+      margin-right: 70px;
+    }
+  }
+
   #projectDescriptionThree {
     margin-top: 20px !important;
   }
@@ -4607,7 +4949,13 @@ a:hover {
     font-size: 5.5px !important;
     width: 170px !important;
     position: relative;
-    left: 20px !important;
+    left: 40px !important;
+  }
+  #descriptionFour {
+    font-size: 5.5px !important;
+    width: 170px !important;
+    position: relative;
+    left: 0px !important;
   }
   #descriptionThree {
     font-size: 5.5px !important;
@@ -4615,7 +4963,7 @@ a:hover {
   #buttonsTwo {
     margin-right: 70px !important;
   }
-  #paragraphOne, #paragraphTwo {
+  #paragraphOne, #paragraphTwo, #paragraphFour {
     font-size: 5px !important;
     margin-right: 15px !important;
     width: 160px !important;
@@ -4757,7 +5105,7 @@ a:hover {
     font-size: 16px !important;
   }
   #mySkillsPage {
-    margin-top: -1030px !important;
+    margin-top: -1230px !important;
   }
   #aboutMeDescriptionAndButtons {
     width: 140px !important;
@@ -4835,7 +5183,11 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 375px) {
+  #workSectionThree {
+    position: relative;
+    top: 370px !important;
+  }
   #borderEffectOne.show {
     transform: translateX(-195px);
     opacity: 1;
@@ -4865,6 +5217,7 @@ a:hover {
 }
 
 @media screen and (max-width: 350px) {
+
   #contactMeFormContainer {
     position: relative;
     left: -35px;
@@ -4881,7 +5234,7 @@ a:hover {
   #titleOne {
     font-size: 15px !important;
   }
-  #titleTwo, #titleThree {
+  #titleTwo, #titleThree, #titleFour {
     font-size: 15px !important;
   }
   #titleTwo {
@@ -4954,7 +5307,7 @@ a:hover {
     position: relative;
     left: -10px !important;
   }
-  #descriptionTwo {
+  #descriptionTwo, #descriptionFour {
     font-size: 4.5px !important;
     position: relative;
     left: 10px !important;
@@ -4972,7 +5325,7 @@ a:hover {
     position: relative;
     right: 15px !important;
   }
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     font-size: 4.5px !important;
   }
   #paragraphThree {
@@ -5024,6 +5377,20 @@ a:hover {
       margin-left: -5px !important;
     }
   }
+  #borderEffectFour {
+    width: 155px;
+    height: 80px;
+    position: relative;
+    left: -15px;
+    #projectImageFour {
+      width: 133.3px;
+      height: 71px;
+      position: relative;
+      bottom: 27px;
+      right: 27px;
+      margin-left: -5px !important;
+    }
+  }
   #projectTwo {
     position: relative;
     left: 95px !important;
@@ -5031,7 +5398,7 @@ a:hover {
   #titleTwo {
     margin-bottom: -10px !important;
   }
-  #paragraphTwo {
+  #paragraphTwo, #paragraphFour {
     width: 130px !important;
     position: relative;
     left: -15px !important;
@@ -5225,5 +5592,34 @@ a:hover {
     width: 105vw;
     position: relative;
     left: 90px;
+  }
+  #borderEffectFour {
+    transform: translateX(-170px);
+    transition: 3s ease-in-out;
+  }
+  #descriptionFour {
+    width: 140px !important;
+    position: relative;
+    left: 5px !important;
+  }
+  #descriptionTwo {
+    width: 130px !important;
+    position: relative;
+    left: 55px !important;
+  }
+  #workSectionTwo {
+    position: relative;
+    top: -270px !important;
+  }
+  #workSectionThree {
+    position: relative;
+    top: 400px !important;
+  }
+  #workSectionOne {
+    position: relative;
+    top: -890px !important;
+  }
+  #mySkillsPage {
+    margin-top: -1300px !important;
   }
 }
